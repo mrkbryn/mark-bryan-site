@@ -1,0 +1,23 @@
+branch-defaults:
+  main:
+    environment: null
+  master:
+    environment: null
+environment-defaults:
+  flask-mark-bryan-site:
+    branch: master
+    repository: mark-bryan-site
+global:
+  application_name: mark-bryan-site
+  branch: master
+  default_ec2_keyname: Key Pair 1
+  default_platform: Python 3.7
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: mark-bryan-site
+  sc: git
+  workspace_type: Application
