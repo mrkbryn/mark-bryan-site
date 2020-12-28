@@ -2,7 +2,8 @@ branch-defaults:
   main:
     environment: null
   master:
-    environment: null
+    environment: mark-bryan-site-env
+    group_suffix: null
 environment-defaults:
   flask-mark-bryan-site:
     branch: master
@@ -11,7 +12,7 @@ global:
   application_name: mark-bryan-site
   branch: null
   default_ec2_keyname: Key Pair 1
-  default_platform: Python 3.6 running on 64bit Amazon Linux
+  default_platform: Python 3.7
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
