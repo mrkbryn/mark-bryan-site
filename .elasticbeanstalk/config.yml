@@ -9,15 +9,15 @@ environment-defaults:
     repository: mark-bryan-site
 global:
   application_name: mark-bryan-site
-  branch: master
+  branch: null
   default_ec2_keyname: Key Pair 1
-  default_platform: Python 3.7
+  default_platform: Python 3.6 running on 64bit Amazon Linux
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
   platform_name: null
   platform_version: null
   profile: null
-  repository: mark-bryan-site
+  repository: null
   sc: git
   workspace_type: Application
