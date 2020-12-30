@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app(test_config=None):
@@ -22,16 +22,6 @@ def create_app(test_config=None):
 
     @app.route('/')
     def index():
-        return """
-        <html>
-            <head>
-                <title>Mark Bryan</title>
-            </head>
-            <body>
-                <h1>MarkBryan.io</h1>
-                <p>Welcome to <em>MarkBryan.io</em></p>
-            </body>
-        </html>
-        """
+        return render_template('index.html')
 
     return app

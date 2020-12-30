@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Bryan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<nav>
+    <h1><a href="{{ url_for('index') }}">Mark Bryan</a></h1>
+</nav>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
