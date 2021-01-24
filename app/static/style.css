@@ -1,18 +1,18 @@
 html {
-  font-family: sans-serif;
-  background: #eee;
+  font-family: 'Roboto', sans-serif;
+  background: white;
   padding: 1rem;
 }
 
 body {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
-  background: white;
+  background: aliceblue;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: serif;
-  color: #377ba8;
+  font-family: 'Roboto', sans-serif;
+  color: black;
   margin: 1rem 0;
 }
 
@@ -26,7 +26,7 @@ hr {
 }
 
 nav {
-  background: lightgray;
+  background: white;
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
