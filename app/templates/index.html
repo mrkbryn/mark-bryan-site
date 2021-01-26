@@ -3,63 +3,91 @@
 {% block title %}Mark Bryan{% endblock %}
 
 {% block content %}
-    <h2>About me</h2>
     <div class="row">
         <div class="col-3">
           <img src="/static/headshot.jpg" class="rounded img-fluid" alt="Mark Bryan">
         </div>
+        <div class="col-9">
+            <p class="lead">Currently at Broadway Technology in New York, bridging the gap between client business goals and technical solutions. Previously in Ithaca, Boston and San Francisco.</p>
+        </div>
     </div>
 
-    <div class="row">
-        <p>Currently at Broadway Technology in New York, bridging the gap between client business goals and technical solutions. Previously in Ithaca, Boston and San Francisco.</p>
-    </div>
+    <div class="row"><p>Connect on LinkedIn and GitHub.</p></div>
+    <a href="https://www.linkedin.com/in/markandrewbryan/" class="btn btn-outline-dark"><span><i class="fab fa-linkedin"></i></span> LinkedIn</a>
+    <a href="https://github.com/mrkbryn" class="btn btn-outline-dark"><span><i class="fab fa-github-square"></i></span> GitHub</a>
 
-    <div class="row">
-        <p>Connect on <a href="https://www.linkedin.com/in/markandrewbryan/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-</svg></i>LinkedIn</a> or view my work on <a href="https://github.com/mrkbryn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-</svg>GitHub</a>.</p>
-    </div>
+    <h5>Education</h5>
 
-    <div class="row">
-        <h2>Education</h2>
-        <h4>Cornell University</h4>
-        <p>Bachelor's Degree, Computer Science. Dyson Business Minor for Engineers.</p>
-        <p>College of Engineering Dean's List (Fall 2014, Fall 2016, Spring 2017).</p>
-    </div>
+    <dl class="row">
+        <dt class="col-sm-2">Cornell University, College of Engineering</dt>
+        <dd class="col-sm-2">
+            <p>Ithaca, NY</p>
+            <p>May 2018</p>
+        </dd>
+        <dd class="col-sm-8">
+            <p>Bachelors Degree, Computer Science</p>
+            <p>Dyson Business Minor for Engineers.</p>
+            <p>College of Engineering Dean's List (Fall 2014, Fall 2016, Spring 2017).</p>
+        </dd>
+    </dl>
 
-    <div class="row">
-        <h3>Research</h3>
-        <p><a href="http://www.vldb.org/pvldb/vol10/p1574-trummer.pdf">Data Vocalization: Optimizing Voice Output of Relational Data</a></p>
-        <p><a href="http://www.vldb.org/pvldb/vol11/p1563-trummer.pdf">Vocalizing Large Time Series Efficiently</a></p>
-    </div>
+    <h5>Research</h5>
 
-    <div class="row">
-        <h2>Work</h2>
-    </div>
+    <dl class="row">
+        <dt class="col-sm-2">Data Vocalization: Optimizing Voice Output of Relational Data</dt>
+        <dd class="col-sm-2">August 2017</dd>
+        <dd class="col-sm-8">
+            <p>Proceedings of the VLDB Endowment, Volume 10</p>
+            <p><a href="http://www.vldb.org/pvldb/vol10/p1574-trummer.pdf">Link to Paper</a></p>
+        </dd>
 
-    <div class="row">
-        <h4>Broadway Technology</h4>
-        <p>Senior Software Consultant, July 2018 - Present</p>
-        <p>Building mission-critical fintech solutions to satisfy complex client requirements.</p>
-    </div>
+        <dt class="col-sm-2">Vocalizing Large Time Series Efficiently</dt>
+        <dd class="col-sm-2">July 2018</dd>
+        <dd class="col-sm-8">
+            <p>Proceedings of the VLDB Endowment, Volume 11</p>
+            <p><a href="http://www.vldb.org/pvldb/vol11/p1563-trummer.pdf">Link to Paper</a></p>
+        </dd>
+    </dl>
 
-    <div class="row">
-        <h4>Yelp</h4>
-        <p>Software Engineer Intern, May 2017 - August 2017</p>
-        <p>Improved data documentation service and data warehouse reporting as a member of Yelp’s Consumer Analytics and Metrics team.</p>
-        <p>Developed backend infrastructure for collecting, cleaning, and analyzing usage data for Yelp’s data warehouse and implemented frontend visualizations to describe and convey information to data warehouse administrators.</p>
-        <p>Provided insight into how Yelp engineers query the data warehouse, guiding decisions to improve system performance.</p>
-        <p>Redesigned React user interface for data documentation service in order to improve developer workflow.</p>
-        <p>Collaborated with engineers from a variety of teams in order to accomplish project goals.</p>
-    </div>
+    <h5>Experience</h5>
 
-    <div class="row">
-        <h4>Toast, Inc.</h4>
-        <p>Software Engineer Intern, June 2016 - August 2016</p>
-        <p>Improved database layer of Toast’s core web application by refactoring the way developers write and release changes to data sources, increasing the reliability of deploying database schema migrations in both development and production environments and improving the efficiency of the engineering team.</p>
-        <p>Presented new development workflow to 40+ member engineering team and developed tooling and documentation to facilitate the transition to the new schema migration process.</p>
-    </div>
+    <!-- TODO: generate via flask template -->
+    <dl class="row">
+        <dt class="col-sm-2">Broadway Technology</dt>
+        <dd class="col-sm-2">
+            <p>New York, NY</p>
+            <p>Senior Software Consultant</p>
+            <p>July 2018 - Present</p>
+        </dd>
+        <dd class="col-sm-8">
+            <p>Building mission-critical fintech solutions to satisfy complex client requirements.</p>
+            <p>Fixed Income, Crypto trading technologies.</p>
+        </dd>
+
+        <dt class="col-sm-2">Yelp</dt>
+        <dd class="col-sm-2">
+            <p>San Francisco, CA</p>
+            <p>Software Engineer Intern</p>
+            <p>May 2017 - August 2017</p>
+        </dd>
+        <dd class="col-sm-8">
+            <p>Improved data documentation service and data warehouse reporting as a member of Yelp’s Consumer Analytics and Metrics team.</p>
+            <p>Developed backend infrastructure for collecting, cleaning, and analyzing usage data for Yelp’s data warehouse and implemented frontend visualizations to describe and convey information to data warehouse administrators.</p>
+            <p>Provided insight into how Yelp engineers query the data warehouse, guiding decisions to improve system performance.</p>
+            <p>Redesigned React user interface for data documentation service in order to improve developer workflow.</p>
+            <p>Collaborated with engineers from a variety of teams in order to accomplish project goals.</p>
+        </dd>
+
+        <dt class="col-sm-2">Toast</dt>
+        <dd class="col-sm-2">
+            <p>Boston, MA</p>
+            <p>Software Engineer Intern</p>
+            <p>June 2016 - August 2016</p>
+        </dd>
+        <dd class="col-sm-8">
+            <p>Improved database layer of Toast’s core web application by refactoring the way developers write and release changes to data sources, increasing the reliability of deploying database schema migrations in both development and production environments and improving the efficiency of the engineering team.</p>
+            <p>Presented new development workflow to 40+ member engineering team and developed tooling and documentation to facilitate the transition to the new schema migration process.</p>
+        </dd>
+    </dl>
 
 {% endblock %}
