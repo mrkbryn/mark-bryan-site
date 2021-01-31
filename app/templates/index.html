@@ -16,18 +16,14 @@
 
     <h5>Education</h5>
     {% for education in education_info %}
-        <dl class="row">
-            <dt class="col-sm-2">{{ education['name'] }}</dt>
-            <dd class="col-sm-2">
-                <p>{{ education['location'] }}</p>
-                <p>{{ education['date'] }}</p>
-            </dd>
-            <dd class="col-sm-8">
-                {% for note in education['notes'] %}
-                    <p>{{ note }}</p>
-                {% endfor %}
-            </dd>
-        </dl>
+        <h6>{{ education['name'] }}</h6>
+        <ul>
+            <li>{{ education['location'] }}</li>
+            <li>{{ education['date'] }}</li>
+            {% for note in education['notes'] %}
+                <li>{{ note }}</li>
+            {% endfor %}
+        </ul>
     {% endfor %}
 
     <h5>Research and Awards</h5>
