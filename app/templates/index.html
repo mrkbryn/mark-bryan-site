@@ -15,77 +15,49 @@
     </div>
 
     <h5>Education</h5>
+    {% for education in education_info %}
+        <dl class="row">
+            <dt class="col-sm-2">{{ education['name'] }}</dt>
+            <dd class="col-sm-2">
+                <p>{{ education['location'] }}</p>
+                <p>{{ education['date'] }}</p>
+            </dd>
+            <dd class="col-sm-8">
+                {% for note in education['notes'] %}
+                    <p>{{ note }}</p>
+                {% endfor %}
+            </dd>
+        </dl>
+    {% endfor %}
 
-    <dl class="row">
-        <dt class="col-sm-2">Cornell University, College of Engineering</dt>
-        <dd class="col-sm-2">
-            <p>Ithaca, NY</p>
-            <p>May 2018</p>
-        </dd>
-        <dd class="col-sm-8">
-            <p>Bachelors Degree, Computer Science</p>
-            <p>Dyson Business Minor for Engineers.</p>
-            <p>College of Engineering Dean's List (Fall 2014, Fall 2016, Spring 2017).</p>
-        </dd>
-    </dl>
-
-    <h5>Research</h5>
-
-    <dl class="row">
-        <dt class="col-sm-2">Data Vocalization: Optimizing Voice Output of Relational Data</dt>
-        <dd class="col-sm-2">August 2017</dd>
-        <dd class="col-sm-8">
-            <p>Proceedings of the VLDB Endowment, Volume 10</p>
-            <p><a href="http://www.vldb.org/pvldb/vol10/p1574-trummer.pdf">Link to Paper</a></p>
-        </dd>
-
-        <dt class="col-sm-2">Vocalizing Large Time Series Efficiently</dt>
-        <dd class="col-sm-2">July 2018</dd>
-        <dd class="col-sm-8">
-            <p>Proceedings of the VLDB Endowment, Volume 11</p>
-            <p><a href="http://www.vldb.org/pvldb/vol11/p1563-trummer.pdf">Link to Paper</a></p>
-        </dd>
-    </dl>
+    <h5>Research and Awards</h5>
+    {% for item in research %}
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item['name'] }} - <strong>{{ item['date'] }}</strong></h5>
+                    <p class="card-text">{{ item['publication'] }}</p>
+                    <p class="card-text">{{ item['description'] }}</p>
+                    <a href="{{ item['url'] }}" class="btn btn-dark">Read Paper</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 
     <h5>Experience</h5>
-
-    <!-- TODO: generate via flask template -->
-    <dl class="row">
-        <dt class="col-sm-2">Broadway Technology</dt>
-        <dd class="col-sm-2">
-            <p>New York, NY</p>
-            <p>Senior Software Consultant</p>
-            <p>July 2018 - Present</p>
-        </dd>
-        <dd class="col-sm-8">
-            <p>Building mission-critical fintech solutions to satisfy complex client requirements.</p>
-            <p>Fixed Income, Crypto trading technologies.</p>
-        </dd>
-
-        <dt class="col-sm-2">Yelp</dt>
-        <dd class="col-sm-2">
-            <p>San Francisco, CA</p>
-            <p>Software Engineer Intern</p>
-            <p>May 2017 - August 2017</p>
-        </dd>
-        <dd class="col-sm-8">
-            <p>Improved data documentation service and data warehouse reporting as a member of Yelp’s Consumer Analytics and Metrics team.</p>
-            <p>Developed backend infrastructure for collecting, cleaning, and analyzing usage data for Yelp’s data warehouse and implemented frontend visualizations to describe and convey information to data warehouse administrators.</p>
-            <p>Provided insight into how Yelp engineers query the data warehouse, guiding decisions to improve system performance.</p>
-            <p>Redesigned React user interface for data documentation service in order to improve developer workflow.</p>
-            <p>Collaborated with engineers from a variety of teams in order to accomplish project goals.</p>
-        </dd>
-
-        <dt class="col-sm-2">Toast</dt>
-        <dd class="col-sm-2">
-            <p>Boston, MA</p>
-            <p>Software Engineer Intern</p>
-            <p>June 2016 - August 2016</p>
-        </dd>
-        <dd class="col-sm-8">
-            <p>Improved database layer of Toast’s core web application by refactoring the way developers write and release changes to data sources, increasing the reliability of deploying database schema migrations in both development and production environments and improving the efficiency of the engineering team.</p>
-            <p>Presented new development workflow to 40+ member engineering team and developed tooling and documentation to facilitate the transition to the new schema migration process.</p>
-        </dd>
-    </dl>
+    {% for item in experience %}
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{ item['title'] }}, {{ item['name'] }} | <strong>{{ item['dates'] }} | {{ item['location'] }}</strong>
+                    </h5>
+                    {% for note in item['notes'] %}
+                        <p class="card-text">{{ note }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 
 {% endblock %}
