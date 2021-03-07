@@ -1,12 +1,15 @@
 import os
+
 from flask import Flask, render_template
+
+from app import mock_data
 
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'app.sqlite')
+        DATABASE=os.path.join(app.instance_path, 'markbryansite.sqlite')
     )
 
     if test_config is None:
@@ -22,5 +25,24 @@ def create_app(test_config=None):
     @app.route('/')
     def index():
         return render_template('index.html')
+
+    @app.route('/research')
+    def research():
+        return render_template('research.html', research=mock_data.research)
+
+    @app.route('/resume')
+    def resume():
+        return render_template('resume.html',
+                               experience=mock_data.experience,
+                               education_info=mock_data.education)
+
+    from . import db
+    db.init_app(app)
+
+    from . import auth
+    app.register_blueprint(auth.bp)
+
+    from . import blog
+    app.register_blueprint(blog.bp)
 
     return app

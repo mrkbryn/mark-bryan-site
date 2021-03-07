@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Mark Bryan - Posts{% endblock %}
+
+{% block content %}
+  {% for post in posts %}
+    <article class="post">
+      <header>
+        <p class="h3">{{ post['title'] }}</p>
+        <p>by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</p>
+        {% if g.user['id'] == post['author_id'] %}
+          <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">Edit</a>
+        {% endif %}
+      </header>
+      <p class="body">{{ post['body'] }}</p>
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
