@@ -24,10 +24,17 @@ def create_app(test_config=None):
 
     @app.route('/')
     def index():
-        return render_template('index.html',
-                               education_info=mock_data.education,
-                               research=mock_data.research,
-                               experience=mock_data.experience)
+        return render_template('index.html')
+
+    @app.route('/research')
+    def research():
+        return render_template('research.html', research=mock_data.research)
+
+    @app.route('/resume')
+    def resume():
+        return render_template('resume.html',
+                               experience=mock_data.experience,
+                               education_info=mock_data.education)
 
     from . import db
     db.init_app(app)

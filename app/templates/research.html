@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Mark Bryan - Research{% endblock %}
+
+{% block content %}
+  <p class="h5 row"><strong>Publications</strong></p>
+
+  {% for item in research %}
+    <div class="row mab-title">
+      <div class="col-9">
+        <p class="h5">{{ item['name'] }}</p>
+      </div>
+      <div class="col-3">
+        <p class="h6" style="text-align: right;"><em>{{ item['date'] }}</em></p>
+      </div>
+    </div>
+    <p>{{ item['publication'] }}</p>
+    <p class="row">{{ item['description'] }}</p>
+    <a href="{{ item['url'] }}" class="btn btn-dark">Read Paper</a>
+
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

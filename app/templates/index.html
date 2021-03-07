@@ -2,58 +2,25 @@
 
 {% block title %}Mark Bryan{% endblock %}
 
+{% block before_content %}
+  <img src="/static/jumbo_mab.jpg" class="mab-header-img img-fluid" alt="Mark Bryan">
+{% endblock %}
+
 {% block content %}
-    <div class="row">
-        <div class="col-3">
-          <img src="/static/headshot.jpg" class="rounded img-fluid" alt="Mark Bryan">
-        </div>
-        <div class="col-9">
-            <p class="lead">Currently at Broadway Technology in New York, bridging the gap between client business goals and technical solutions. Previously in Ithaca, Boston and San Francisco.</p>
-            <a href="https://www.linkedin.com/in/markandrewbryan/" class="btn btn-outline-dark"><span><i class="fab fa-linkedin"></i></span> LinkedIn</a>
-            <a href="https://github.com/mrkbryn" class="btn btn-outline-dark"><span><i class="fab fa-github-square"></i></span> GitHub</a>
-        </div>
-    </div>
+  <p class="h5 row">About</p>
+  <p class="row">
+    I'm currently working at Broadway Technology in New York City working on mission-critical fintech trading systems in a client-facing software engineering role.
+  </p>
+  <p class="row">
+    In my current role, I work on all phases of the software product lifecycle: engaging with clients to gather
+    complex business requirements; designing and refining implementation plans to satisfy project requirements; implementing
+    software enhancements and bug fixes to reach deliverables; and deploying completed solutions to production environments.
+  </p>
+  <p class="row">
+    Connect with me on LinkedIn and view my public projects on GitHub.
+  </p>
 
-    <h5>Education</h5>
-    {% for education in education_info %}
-        <h6>{{ education['name'] }}</h6>
-        <ul>
-            <li>{{ education['location'] }}</li>
-            <li>{{ education['date'] }}</li>
-            {% for note in education['notes'] %}
-                <li>{{ note }}</li>
-            {% endfor %}
-        </ul>
-    {% endfor %}
-
-    <h5>Research and Awards</h5>
-    {% for item in research %}
-        <div class="row">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{ item['name'] }} - <strong>{{ item['date'] }}</strong></h5>
-                    <p class="card-text">{{ item['publication'] }}</p>
-                    <p class="card-text">{{ item['description'] }}</p>
-                    <a href="{{ item['url'] }}" class="btn btn-dark">Read Paper</a>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-
-    <h5>Experience</h5>
-    {% for item in experience %}
-        <div class="row">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        {{ item['title'] }}, {{ item['name'] }} | <strong>{{ item['dates'] }} | {{ item['location'] }}</strong>
-                    </h5>
-                    {% for note in item['notes'] %}
-                        <p class="card-text">{{ note }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-
+  <a href="https://www.linkedin.com/in/markandrewbryan/" class="btn btn-outline-dark"><span><i class="fab fa-linkedin"></i></span> LinkedIn</a>
+  <a href="https://github.com/mrkbryn" class="btn btn-outline-dark"><span><i class="fab fa-github-square"></i></span> GitHub</a>
+  <div class="row"></div>
 {% endblock %}

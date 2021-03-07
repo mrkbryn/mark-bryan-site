@@ -1,8 +1,17 @@
-.navbar {
-    margin-bottom: 10px;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.before_content {
+    margin-bottom: 20px;
 }
 
 .row {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 8px;
+}
+
+.mab-title {
+    margin-bottom: 0;
 }

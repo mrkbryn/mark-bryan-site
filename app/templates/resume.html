@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Mark Bryan - Resume{% endblock %}
+
+{% block content %}
+  <p class="row h3">Education</p>
+  {% for education in education_info %}
+    <div class="row mab-title">
+      <div class="col-9">
+        <p class="h5"><strong>{{ education['name'] }}</strong></p>
+      </div>
+      <div class="col-3">
+        <p class="h6" style="text-align: right;"><em>{{ education['date'] }}</em></p>
+      </div>
+    </div>
+    <div class="row mab-title">
+      <p><em>@ {{ education['location'] }}</em></p>
+    </div>
+    <div class="row">
+      <ul>
+        {% for note in education['notes'] %}
+          <li>{{ note }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+
+  <p class="row h3">Work Experience</p>
+  {% for item in experience %}
+    <div class="row mab-title">
+      <div class="col-9">
+        <p class="h5"><strong>{{ item['title'] }}</strong></p>
+      </div>
+      <div class="col-3">
+        <p class="h6" style="text-align: right;"><em>{{ item['dates'] }}</em></p>
+      </div>
+    </div>
+    
+    <div class="row mab-title">
+      <p><em>{{ item['name'] }} @ {{ item['location'] }}</em></p>
+    </div>
+
+    <div class="row">
+      <ul>
+        {% for note in item['notes'] %}
+          <li>{{ note }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+{% endblock %}

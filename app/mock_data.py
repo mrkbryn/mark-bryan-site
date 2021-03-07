@@ -42,12 +42,15 @@ experience = [
         "title": "Senior Software Consultant",
         "dates": "July 2018 - Present",
         "notes": [
-            "Building mission-critical fintech solutions to satisfy complex client requirements.",
-            "Fixed Income, Crypto trading technologies."
+            "Designing, building, and deploying mission-critical fintech solutions to satisfy complex client requirements.",
+            "Managed requirements gathering, design phases, and implementation of high-impact projects to deliver value to client businesses.",
+            "Identified and implemented enhancements to Broadway's core products wherever possible when delivering solutions to clients.",
+            "Worked with clients on a daily basis to ensure customer success and communicate deliverable timelines.",
+            "Gained experience in Fixed Income and Crypto trading technologies.",
         ],
     },
     {
-        "name": "Yelp",
+        "name": "Yelp, Inc.",
         "location": "San Francisco, CA",
         "title": "Software Engineer Intern",
         "dates": "May 2017 - August 2017",
