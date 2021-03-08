@@ -4,21 +4,21 @@
 
 {% block content %}
   <p class="row h3">Education</p>
-  {% for education in education_info %}
+  {% for item in education %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="h5"><strong>{{ education['name'] }}</strong></p>
+        <p class="h5"><strong>{{ item['name'] }}</strong></p>
       </div>
       <div class="col-3">
-        <p class="h6" style="text-align: right;"><em>{{ education['date'] }}</em></p>
+        <p class="h6" style="text-align: right;"><em>{{ item['dates'] }}</em></p>
       </div>
     </div>
     <div class="row mab-title">
-      <p><em>@ {{ education['location'] }}</em></p>
+      <p><em>@ {{ item['location'] }}</em></p>
     </div>
     <div class="row">
       <ul>
-        {% for note in education['notes'] %}
+        {% for note in item['notes'] %}
           <li>{{ note }}</li>
         {% endfor %}
       </ul>
