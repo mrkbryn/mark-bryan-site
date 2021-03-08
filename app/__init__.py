@@ -3,6 +3,7 @@ import os
 from flask import Flask, render_template
 
 from app import mock_data
+from app.db import get_db
 
 
 def create_app(test_config=None):
@@ -32,9 +33,43 @@ def create_app(test_config=None):
 
     @app.route('/resume')
     def resume():
+        # Fetch experiences from database and parse into a UI view...
+        # Ignore my terrible data model for now...
+        db = get_db()
+        experience_view = []
+        experiences = db.execute(
+            'SELECT e.id, e.name, e.title, e.location, e.dates, e.body'
+            ' FROM experience e'
+            ' ORDER BY created ASC'
+        ).fetchall()
+        for e in experiences:
+            experience_view.append({
+                'id': e['id'],
+                'name': e['name'],
+                'title': e['title'],
+                'location': e['location'],
+                'dates': e['dates'],
+                'notes': e['body'].split('|'),
+            })
+
+        education_view = []
+        education = db.execute(
+            'SELECT e.id, e.name, e.location, e.dates, e.body'
+            ' FROM education e'
+            ' ORDER BY created ASC'
+        ).fetchall()
+        for e in education:
+            education_view.append({
+                'id': e['id'],
+                'name': e['name'],
+                'location': e['location'],
+                'dates': e['dates'],
+                'notes': e['body'].split('|'),
+            })
+
         return render_template('resume.html',
-                               experience=mock_data.experience,
-                               education_info=mock_data.education)
+                               experience=experience_view,
+                               education=education_view)
 
     from . import db
     db.init_app(app)
