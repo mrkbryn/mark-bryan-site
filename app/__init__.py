@@ -27,20 +27,17 @@ def create_app(test_config=None):
     def index():
         return render_template('index.html')
 
-    @app.route('/research')
-    def research():
-        return render_template('research.html', research=mock_data.research)
-
     from . import db
     db.init_app(app)
 
+    # Register all Blueprint modules
     from . import auth
     app.register_blueprint(auth.bp)
-
     from . import blog
     app.register_blueprint(blog.bp)
-
     from . import resume
     app.register_blueprint(resume.bp)
+    from . import research
+    app.register_blueprint(research.bp)
 
     return app
