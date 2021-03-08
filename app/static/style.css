@@ -15,3 +15,8 @@ body {
 .mab-title {
     margin-bottom: 0;
 }
+
+.admin-tools {
+    background-color: red;
+    margin-bottom: 20px;
+}
