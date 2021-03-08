@@ -12,7 +12,7 @@
 
   {% for post in posts %}
     <p class="row h5">{{ post['title'] }}</p>
-    <p class="row">by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</p>
+    <p class="row">by {{ post['fullname'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</p>
     {% if g.user['id'] == post['author_id'] %}
       <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">Edit</a>
     {% endif %}
