@@ -3,20 +3,30 @@
 {% block title %}Mark Bryan - Research{% endblock %}
 
 {% block content %}
-  <p class="h5 row"><strong>Publications</strong></p>
+  <div class="row mab-title">
+    <p>Publications</p>
+  </div>
 
   {% for item in research %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="h5">{{ item['name'] }}</p>
+        <p class="text-primary">{{ item['name'] }}</p>
       </div>
       <div class="col-3">
-        <p class="h6" style="text-align: right;"><em>{{ item['date'] }}</em></p>
+        <p class="text-muted" style="text-align: right;">{{ item['date'] }}</p>
       </div>
     </div>
-    <p>{{ item['publication'] }}</p>
-    <p class="row">{{ item['description'] }}</p>
-    <a href="{{ item['url'] }}" class="btn btn-dark">Read Paper</a>
+    <div class="row">
+      <p>{{ item['publication'] }}</p>
+    </div>
+    <div class="row">
+      <p>{{ item['description'] }}</p>
+    </div>
+    <div class="row">
+      <div>
+        <a href="{{ item['url'] }}" class="btn btn-dark">Read Paper</a>
+      </div>
+    </div>
 
     {% if not loop.last %}
       <hr>
