@@ -12,7 +12,7 @@ def index():
     db = get_db()
     experience_view = []
     experiences = db.execute(
-        'SELECT e.id, e.name, e.title, e.location, e.dates, e.body'
+        'SELECT e.id, e.name, e.title, e.location, e.dates, e.body, e.logo_url'
         ' FROM experience e'
         ' ORDER BY created ASC'
     ).fetchall()
@@ -24,11 +24,12 @@ def index():
             'location': e['location'],
             'dates': e['dates'],
             'notes': e['body'].split('|'),
+            'logo_url': e['logo_url'],
         })
 
     education_view = []
     education = db.execute(
-        'SELECT e.id, e.name, e.location, e.dates, e.body'
+        'SELECT e.id, e.name, e.location, e.dates, e.body, e.logo_url'
         ' FROM education e'
         ' ORDER BY created ASC'
     ).fetchall()
@@ -39,6 +40,7 @@ def index():
             'location': e['location'],
             'dates': e['dates'],
             'notes': e['body'].split('|'),
+            'logo_url': e['logo_url'],
         })
 
     return render_template('resume/index.html', experience=experience_view, education=education_view)

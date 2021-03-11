@@ -9,14 +9,16 @@
   {% for item in education %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="mab-text-1 mab-title">{{ item['name'] }}</p>
+        <p class="mab-text-1 mab-title">{{ item['name'] }}<span><img src="{{ item['logo_url'] }}" class="mab-logo"></span></p>
       </div>
       <div class="col-3">
         <p class="mab-text-2 mab-title" style="text-align: right;"><em>{{ item['dates'] }}</em></p>
       </div>
     </div>
     <div class="row mab-title">
-      <p class="text-secondary"><em>@ {{ item['location'] }}</em></p>
+      <div class="col-9">
+        <p class="text-secondary"><em>@ {{ item['location'] }}</em></p>
+      </div>
     </div>
     <div class="row">
       <ul class="list-unstyled">
@@ -35,7 +37,7 @@
   {% for item in experience %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="mab-text-1 mab-title">{{ item['title'] }}</p>
+        <p class="mab-text-1 mab-title">{{ item['title'] }}<span><img src="{{ item['logo_url'] }}" class="mab-logo"></span></p>
       </div>
       <div class="col-3">
         <p class="h6 mab-text-2 mab-title" style="text-align: right;"><em>{{ item['dates'] }}</em></p>
