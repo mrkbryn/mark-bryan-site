@@ -29,6 +29,11 @@ body {
     margin-bottom: 0;
 }
 
+.mab-section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .admin-tools {
     background-color: var(--mab-admin);
     margin-bottom: 20px;

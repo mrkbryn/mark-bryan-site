@@ -2,7 +2,6 @@ import os
 
 from flask import Flask, render_template
 
-from app import mock_data
 from app.db import get_db
 
 

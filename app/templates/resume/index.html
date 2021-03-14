@@ -3,8 +3,8 @@
 {% block title %}Mark Bryan - Resume{% endblock %}
 
 {% block content %}
-  <div class="row mab-title">
-    <p>Education</p>
+  <div class="row">
+    <p class="mab-section-title">Education</p>
   </div>
   {% for item in resume['education'] %}
     <div class="row mab-title">
@@ -32,7 +32,7 @@
   <hr>
 
   <div class="row mab-title">
-    <p>Experience</p>
+    <p class="mab-section-title">Experience</p>
   </div>
   {% for item in resume['experience'] %}
     <div class="row mab-title">
@@ -59,7 +59,7 @@
 
   <hr>
   <div class="row mab-title">
-    <p>Skills</p>
+    <p class="mab-section-title">Skills</p>
   </div>
   <div class="row">
     <ul>
