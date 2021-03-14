@@ -1,0 +1,94 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "name": "Cornell University, College of Engineering",
+      "location": "Ithaca, NY",
+      "dates": "May 2018",
+      "details": [
+        "Bachelor's Degree, Computer Science",
+        "Dyson Business Minor for Engineers",
+        "College of Engineering Dean's List (Fall 2014, Fall 2016, Spring 2017)"
+      ],
+      "logo_url": "/static/cornell_logo.svg"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Broadway Technology",
+      "title": "Senior Software Consultant",
+      "location": "New York, NY",
+      "dates": "Jul 2018 - Present",
+      "details": [
+        "Designing, building, and deploying mission-critical fintech solutions to satisfy complex client requirements.",
+        "Managed requirements gathering, design phases, and implementation of high-impact projects to deliver value to client businesses.",
+        "Identifying and implementing enhancements to Broadway's core products wherever possible when delivering solutions to clients.",
+        "Working with clients on a daily basis to ensure customer success and communicate deliverable timelines.",
+        "Experience in Fixed Income and Crypto trading technologies."
+      ],
+      "logo_url": "/static/bway_logo.png"
+    },
+    {
+      "id": 2,
+      "company": "Cornell Database Group, Data Vocalization Project",
+      "title": "Research Assistant",
+      "location": "Ithaca, NY",
+      "dates": "Jan 2017 - May 2018",
+      "details": [
+        "Research optimization problem of how to efficiently represent relational data through audio interfaces by applying data mining algorithms to translate data into natural language speech.",
+        "Collaborate with Professor Immanuel Trummer to develop a database system funded by a Google Faculty Research Award.",
+        "Implemented and refined exhaustive and polynomial time approximation algorithms that translate datasets into speech output. These algorithms minimize speaking time subject to user-defined precision constraints."
+      ],
+      "logo_url": "/static/cornell_logo.svg"
+    },
+    {
+      "id": 3,
+      "company": "Cornell University Computer Science Dept.",
+      "title": "Teaching Assistant, Database Systems",
+      "location": "Ithaca, NY",
+      "dates": "Aug 2016 - May 2018",
+      "details": [
+        "Conducted weekly office hours, create and update problem sets and solutions, and grade problem sets for Database Systems course.",
+        "Developed automated grading scripts used by team of 20 teaching assistants to optimize grading processes."
+      ],
+      "logo_url": "/static/cornell_logo.svg"
+    },
+    {
+      "id": 4,
+      "company": "Yelp, Inc.",
+      "title": "Software Engineer Intern",
+      "location": "San Francisco, CA",
+      "dates": "May 2017 - Aug 2017",
+      "details": [
+        "Improved data documentation service and data warehouse reporting as a member of Yelp's Consumer Analytics and Metrics team.",
+        "Developed backend infrastructure for collecting, cleaning, and analyzing usage data for Yelp's data warehouse and implemented frontend visualizations to describe and convey information to data warehouse administrators.",
+        "Provided insight into how Yelp engineers query the data warehouse, guiding decisions to improve system performance.",
+        "Redesigned React user interface for data documentation service in order to improve developer workflow.",
+        "Collaborated with engineers from a variety of teams in order to accomplish project goals."
+      ],
+      "logo_url": "/static/yelp_logo.png"
+    },
+    {
+      "id": 5,
+      "company": "Toast, Inc.",
+      "title": "Software Engineer Intern",
+      "location": "Boston, MA",
+      "dates": "Jun 2016 - Aug 2016",
+      "details": [
+        "Improved database layer of Toast's core web application by refactoring the way developers write and release changes to data sources, increasing the reliability of deploying database schema migrations in both development and production environments and improving the efficiency of the engineering team.",
+        "Presented new development workflow to 40+ member engineering team and developed tooling and documentation to facilitate the transition to the new schema migration process."
+      ],
+      "logo_url": "/static/toast_logo.png"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Java",
+    "C++",
+    "JavaScript",
+    "C#",
+    "Database Systems",
+    "Distributed Systems"
+  ]
+}

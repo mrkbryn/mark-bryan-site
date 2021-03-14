@@ -6,13 +6,13 @@
   <div class="row mab-title">
     <p>Education</p>
   </div>
-  {% for item in education %}
+  {% for item in resume['education'] %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="mab-text-1 mab-title">{{ item['name'] }}<span><img src="{{ item['logo_url'] }}" class="mab-logo"></span></p>
+        <p class="mab-text-1 mab-title">{{ item['name'] }}</p>
       </div>
       <div class="col-3">
-        <p class="mab-text-2 mab-title" style="text-align: right;"><em>{{ item['dates'] }}</em></p>
+        <p class="mab-text-2 mab-title" style="text-align: right;"><span><img src="{{ item['logo_url'] }}" class="mab-logo"></span><em>{{ item['dates'] }}</em></p>
       </div>
     </div>
     <div class="row mab-title">
@@ -22,7 +22,7 @@
     </div>
     <div class="row">
       <ul class="list-unstyled">
-        {% for note in item['notes'] %}
+        {% for note in item['details'] %}
           <li>{{ note }}</li>
         {% endfor %}
       </ul>
@@ -34,23 +34,23 @@
   <div class="row mab-title">
     <p>Experience</p>
   </div>
-  {% for item in experience %}
+  {% for item in resume['experience'] %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="mab-text-1 mab-title">{{ item['title'] }}<span><img src="{{ item['logo_url'] }}" class="mab-logo"></span></p>
+        <p class="mab-text-1 mab-title">{{ item['title'] }}</p>
       </div>
       <div class="col-3">
-        <p class="h6 mab-text-2 mab-title" style="text-align: right;"><em>{{ item['dates'] }}</em></p>
+        <p class="h6 mab-text-2 mab-title" style="text-align: right;"><span><img src="{{ item['logo_url'] }}" class="mab-logo"></span><em>{{ item['dates'] }}</em></p>
       </div>
     </div>
     
     <div class="row">
-      <p class="text-muted mab-title"><em>{{ item['name'] }} @ {{ item['location'] }}</em></p>
+      <p class="text-muted mab-title"><em>{{ item['company'] }} @ {{ item['location'] }}</em></p>
     </div>
 
     <div class="row">
       <ul class="list-unstyled">
-        {% for note in item['notes'] %}
+        {% for note in item['details'] %}
           <li>{{ note }}</li>
         {% endfor %}
       </ul>
@@ -63,13 +63,9 @@
   </div>
   <div class="row">
     <ul>
-      <li>Python</li>
-      <li>Java</li>
-      <li>C++</li>
-      <li>JavaScript</li>
-      <li>C#</li>
-      <li>Database Systems</li>
-      <li>Distributed Systems</li>
+      {% for skill in resume['skills'] %}
+        <li>{{ skill }}</li>
+      {% endfor %}
     </ul>
   </div>
 

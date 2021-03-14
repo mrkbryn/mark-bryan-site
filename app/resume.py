@@ -1,46 +1,11 @@
-from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
-)
-
-from app.db import get_db
+import json
+from flask import Blueprint, render_template, current_app
 
 bp = Blueprint('resume', __name__, url_prefix='/resume')
 
 
 @bp.route('/')
 def index():
-    db = get_db()
-    experience_view = []
-    experiences = db.execute(
-        'SELECT e.id, e.name, e.title, e.location, e.dates, e.body, e.logo_url'
-        ' FROM experience e'
-        ' ORDER BY created ASC'
-    ).fetchall()
-    for e in experiences:
-        experience_view.append({
-            'id': e['id'],
-            'name': e['name'],
-            'title': e['title'],
-            'location': e['location'],
-            'dates': e['dates'],
-            'notes': e['body'].split('|'),
-            'logo_url': e['logo_url'],
-        })
-
-    education_view = []
-    education = db.execute(
-        'SELECT e.id, e.name, e.location, e.dates, e.body, e.logo_url'
-        ' FROM education e'
-        ' ORDER BY created ASC'
-    ).fetchall()
-    for e in education:
-        education_view.append({
-            'id': e['id'],
-            'name': e['name'],
-            'location': e['location'],
-            'dates': e['dates'],
-            'notes': e['body'].split('|'),
-            'logo_url': e['logo_url'],
-        })
-
-    return render_template('resume/index.html', experience=experience_view, education=education_view)
+    with current_app.open_resource('resume.json') as f:
+        data = json.load(f)
+    return render_template('resume/index.html', resume=data)

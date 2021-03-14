@@ -1,3 +1,16 @@
+:root {
+    --mab-dark: #212529;
+    --mab-admin: #8B0000;
+    --mab-1: #763626;
+    --mab-2: #2A3132;
+    --mab-3: #3F3B37;
+    --mab-4: #90AFC5;
+    --mab-text-1: #763626;
+    --mab-text-2: #2A3132;
+    --mab-text-3: #336B87;
+    --mab-text-4: #90AFC5;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -17,46 +30,46 @@ body {
 }
 
 .admin-tools {
-    background-color: red;
+    background-color: var(--mab-admin);
     margin-bottom: 20px;
 }
 
 .mab-text-1 {
-    color: #763626;
+    color: var(--mab-text-1);
 }
 
 .mab-text-2 {
-    color: #2A3132;
+    color: var(--mab-text-2);
 }
 
 .mab-text-3 {
-    color: #336B87;
+    color: var(--mab-text-3);
 }
 
 .mab-text-4 {
-    color: #90AFC5;
+    color: var(--mab-text-4);
 }
 
 .mab-1 {
-    background-color: #763626;
+    background-color: var(--mab-1);
 }
 
 .mab-2 {
-    background-color: #2A3132;
+    background-color: var(--mab-2);
 }
 
 .mab-3 {
-    background-color: #336B87;
+    background-color: var(--mab-3);
 }
 
 .mab-4 {
-    background-color: #90AFC5;
+    background-color: var(--mab-4);
 }
 
 .mab-logo {
     height: 28px;
     width: 28px;
-    margin-left: 8px;
+    margin-right: 8px;
     object-fit: cover;
     border-radius: 50%;
 }
