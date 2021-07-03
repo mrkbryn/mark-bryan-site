@@ -9,7 +9,7 @@
   {% for item in research['publications'] %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="text-primary">{{ item['name'] }}</p>
+        <p class="mab-text-1">{{ item['name'] }}</p>
       </div>
       <div class="col-3">
         <p class="text-muted" style="text-align: right;">{{ item['date'] }}</p>
@@ -26,9 +26,9 @@
         <a href="{{ item['url'] }}" class="btn btn-dark">Read Paper</a>
       </div>
     </div>
-
-    <hr>
   {% endfor %}
+
+  <hr>
 
   <div class="row mab-title">
     <p class="mab-section-title">Presentations</p>
@@ -36,7 +36,7 @@
   {% for item in research['presentations'] %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="text-primary">{{ item['name'] }}</p>
+        <p class="mab-text-1">{{ item['name'] }}</p>
       </div>
       <div class="col-3">
         <p class="text-muted" style="text-align: right;">{{ item['date'] }}</p>
@@ -47,13 +47,15 @@
     </div>
   {% endfor %}
 
+  <hr>
+
   <div class="row mab-title">
     <p class="mab-section-title">Awards</p>
   </div>
   {% for item in research['awards'] %}
     <div class="row mab-title">
       <div class="col-9">
-        <p class="text-primary">{{ item['name'] }}</p>
+        <p class="mab-text-1">{{ item['name'] }}</p>
       </div>
       <div class="col-3">
         <p class="text-muted" style="text-align: right;">{{ item['date'] }}</p>
