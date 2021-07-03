@@ -69,4 +69,10 @@
     </ul>
   </div>
 
+  <div class="row justify-content-center">
+      {% for skill in resume['skills'] %}
+        <div class="col">{{ skill }}</div>
+      {% endfor %}
+  </div>
+
 {% endblock %}
