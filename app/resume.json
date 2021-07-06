@@ -22,10 +22,11 @@
       "dates": "Jul 2018 - Present",
       "details": [
         "Working in a client-facing role to design, build, and deploy mission-critical fintech solutions to satisfy complex client requirements.",
-        "Managed requirements gathering, design phases, and implementation of high-impact projects to deliver value to client businesses.",
-        "Identifying and implementing enhancements to Broadway's core products wherever possible when delivering solutions to clients.",
-        "Working with clients on a daily basis to ensure customer success and communicate deliverable timelines.",
-        "Experience in Fixed Income and Crypto trading technologies."
+        "Built backend services for client’s expansion into margin trading and cryptocurrency loan offerings, encapsulating the business logic and risk management of these workflows into a convenient backend API.",
+        "Implemented support for Immediate-Or-Cancel orders in matching engine service to support client’s expansion into new trading offerings. Conducted performance testing to measure performance across benchmark workloads.",
+        "Improved quality of crypto market connectors through critical bug fixes and enhancements to API key management.",
+        "Improved usability of Broadway’s trading GUI applications with feature enhancements like saved user layout configuration and new configuration options for GUI pricing controls.",
+        "Led Python training course for Broadway’s new-hire onboarding program, teaching basics of Python programming and how to develop Python services against Broadway’s distributed platform."
       ],
       "logo_url": "/static/bway_logo.png"
     },
