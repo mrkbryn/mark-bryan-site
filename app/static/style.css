@@ -3,9 +3,9 @@
     --mab-admin: #8B0000;
     --mab-1: #763626;
     --mab-2: #2A3132;
-    --mab-3: #3F3B37;
+    --mab-3: #05386B;
     --mab-4: #90AFC5;
-    --mab-text-1: #763626;
+    --mab-text-1: #05386B;
     --mab-text-2: #2A3132;
     --mab-text-3: #336B87;
     --mab-text-4: #90AFC5;
@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  background-color: #f8f8ff;
 }
 
 .before_content {
