@@ -8,7 +8,7 @@
       "details": [
         "Bachelor's Degree, Computer Science",
         "Dyson Business Minor for Engineers",
-        "College of Engineering Dean's List (Fall 2014, Fall 2016, Spring 2017, Fall 2017, Spring 2018)"
+        "College of Engineering Dean's List (5 nominations)"
       ],
       "logo_url": "/static/cornell_logo.svg"
     }
@@ -21,25 +21,25 @@
       "location": "New York, NY",
       "dates": "Jul 2018 - Present",
       "details": [
-        "Working in a client-facing role to design, build, and deploy mission-critical fintech solutions to satisfy complex client requirements.",
-        "Built backend services for client’s expansion into margin trading and cryptocurrency loan offerings, encapsulating the business logic and risk management of these workflows into a convenient backend API.",
-        "Implemented support for Immediate-Or-Cancel orders in matching engine service to support client’s expansion into new trading offerings. Conducted performance testing to measure performance across benchmark workloads.",
-        "Improved quality of crypto market connectors through critical bug fixes and enhancements to API key management.",
-        "Improved usability of Broadway’s trading GUI applications with feature enhancements like saved user layout configuration and new configuration options for GUI pricing controls.",
-        "Led Python training course for Broadway’s new-hire onboarding program, teaching basics of Python programming and how to develop Python services against Broadway’s distributed platform."
+        "Designing, building, and deploying mission-critical fintech software solutions to satisfy complex client requirements.",
+        "Built backend services for client's expansion into margin trading and cryptocurrency loan offerings, encapsulating the business logic and risk management for these workflows into a backend API for downstream client integrations.",
+        "Implemented support for Immediate-Or-Cancel orders in matching engine service to enable client's expansion into new trading offerings, conducting performance testing to measure performance across benchmark workloads.",
+        "Improved quality and reliability of crypto exchange adaptors through critical bug fixes and enhancements.",
+        "Improved usability of Broadway's trading GUI applications with feature enhancements like saved user layout configuration and customizable pricing controls.",
+        "Led Python training course for Broadway's new-hire onboarding program, teaching basics of Python programming and how to develop Python services within Broadway's distributed platform."
       ],
       "logo_url": "/static/bway_logo.png"
     },
     {
       "id": 2,
-      "company": "Cornell Database Group, Data Vocalization Project",
+      "company": "Cornell Database Group",
       "title": "Research Assistant",
       "location": "Ithaca, NY",
       "dates": "Jan 2017 - May 2018",
       "details": [
-        "Research optimization problem of how to efficiently represent relational data through audio interfaces by applying data mining algorithms to translate data into natural language speech.",
-        "Collaborate with Professor Immanuel Trummer to develop a database system funded by a Google Faculty Research Award.",
-        "Implemented and refined exhaustive and polynomial time approximation algorithms that translate datasets into speech output. These algorithms minimize speaking time subject to user-defined precision constraints."
+        "Applied data mining algorithms to research efficient representation of relational and time series data through audio interfaces.",
+        "Collaborated with Professor Immanuel Trummer to develop a database system funded by a Google Faculty Research Award.",
+        "Built prototype database system written in Java which translates datasets into speech output using algorithms that minimize speaking time subject to user-defined precision constraints."
       ],
       "logo_url": "/static/cornell_logo.svg"
     },
@@ -57,7 +57,7 @@
     },
     {
       "id": 4,
-      "company": "Yelp, Inc.",
+      "company": "Yelp",
       "title": "Software Engineer Intern",
       "location": "San Francisco, CA",
       "dates": "May 2017 - Aug 2017",
@@ -72,13 +72,13 @@
     },
     {
       "id": 5,
-      "company": "Toast, Inc.",
+      "company": "Toast",
       "title": "Software Engineer Intern",
       "location": "Boston, MA",
       "dates": "Jun 2016 - Aug 2016",
       "details": [
         "Improved database layer of Toast's core web application by refactoring the way developers write and release changes to data sources, increasing the reliability of deploying database schema migrations in both development and production environments and improving the efficiency of the engineering team.",
-        "Presented new development workflow to 40+ member engineering team and developed tooling and documentation to facilitate the transition to the new schema migration process."
+        "Presented new development workflow to engineering team and developed tooling and documentation to facilitate the adoption of the new schema migration process."
       ],
       "logo_url": "/static/toast_logo.png"
     }
