@@ -1,14 +1,8 @@
 :root {
-    --mab-dark: #212529;
     --mab-admin: #8B0000;
-    --mab-1: #763626;
-    --mab-2: #2A3132;
     --mab-3: #05386B;
-    --mab-4: #90AFC5;
     --mab-text-1: #05386B;
     --mab-text-2: #2A3132;
-    --mab-text-3: #336B87;
-    --mab-text-4: #90AFC5;
 }
 
 body {
@@ -48,28 +42,8 @@ body {
     color: var(--mab-text-2);
 }
 
-.mab-text-3 {
-    color: var(--mab-text-3);
-}
-
-.mab-text-4 {
-    color: var(--mab-text-4);
-}
-
-.mab-1 {
-    background-color: var(--mab-1);
-}
-
-.mab-2 {
-    background-color: var(--mab-2);
-}
-
 .mab-3 {
     background-color: var(--mab-3);
-}
-
-.mab-4 {
-    background-color: var(--mab-4);
 }
 
 .mab-logo {
