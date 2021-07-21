@@ -5,7 +5,8 @@ from app.db import get_db
 def test_index(client, auth):
     response = client.get('/')
     # Verify public links
-    assert b"About Mark Bryan" in response.data
+    assert b"About" in response.data
+    assert b"Home" in response.data
     assert b"Resume" in response.data
     assert b"Research" in response.data
 
