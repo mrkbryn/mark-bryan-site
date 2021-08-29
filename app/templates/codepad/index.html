@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Mark Bryan - Codepad{% endblock %}
+{% set active_page = "cp" %}
+
+{% block content %}
+  <p class="row">A playground for running test code.</p>
+  <form method="post">
+    <div class="mb-3">
+      <label for="source" class="form-label">Source</label>
+      <textarea name="source" class="form-control" id="source">{{ request.form['source'] }}</textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Run">
+  </form>
+
+  {% if result %}
+    <hr>
+    <div>
+      <p class="row">{{ result }}</p>
+    </div>
+  {% endif %}
+{% endblock %}
